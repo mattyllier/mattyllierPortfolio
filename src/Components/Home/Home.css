@@ -1,0 +1,49 @@
+* {
+    background-color: darkslategrey;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 80px 10px 80px;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgb(194,89,255)0%,
+        rgb(188,202,49)100%
+    );
+}
+
+.button {
+    background: transparent;
+    cursor: pointer;
+    font-size: 50px;
+    background-color: lightgrey;
+    transition: all .2s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
+}
+
+.button:hover{
+    text-shadow: lightgrey;
+    transform: scale(1.1);
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: darkslategrey;
+}
+
+.section {
+    height: 500px;
+    color: lightgrey;
+    font-size: 40px;
+    margin: 20px;
+    background: linear-gradient(
+        99deg,
+        rgb(01,1,5,1),
+        rgb(32,124,124)
+    );
+
+}

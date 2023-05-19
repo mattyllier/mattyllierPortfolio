@@ -1,0 +1,23 @@
+.sideNav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    position: fixed;
+}
+
+.sideButton {
+    margin: 5px;
+}
+
+.navToTop {
+    display: flex;
+}
+
+.toTop {
+    color: lightgrey;
+    background-color: black !important;
+    height: 60px;
+    width: 60px;
+}
