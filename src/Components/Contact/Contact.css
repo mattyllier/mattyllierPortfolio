@@ -1,3 +1,35 @@
-.gitHub {
+.contactSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 250px;
+    padding-top: 10px;
+}
+
+.link {
     color: white;
+    text-decoration: none;
+    /*padding: 0 40px 0 40px;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.linkIcon {
+    height: 100px;
+    width: 100px;
+    padding-top: 15px;
+    transition: all, ease-in-out .2s;
+}
+
+.linkIcon:hover{
+    transform: scale(1.1);
+}
+
+#mailTo {
+    z-index: 1;
+}
+
+.moai {
+    width: 180%;
+    margin: -250px 0 0 -10px;
 }

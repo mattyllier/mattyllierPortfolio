@@ -1,14 +1,17 @@
 import {HashLink} from 'react-router-hash-link'
 import {useState, useEffect} from 'react'
+import ReactCurvedText from 'react-curved-text'
 import About from '../About/About'
 import Projects from '../Projects/Projects'
 import Resume from '../Resume/Resume'
 import Contact from '../Contact/Contact'
 import Nav from '../Nav/Nav'
-import ScrollButtons from '../ScrollButtons/ScrollButtons'
+//import RoundText from '../RoundText/RoundText'
+//import ScrollButtons from '../ScrollButtons/ScrollButtons'
 //import BsGithub from 'react-icons/bs'
 import './Home.css'
 import Img from './myImg.jpg'
+import Vector from './Mountains-Silhouette.png'
 
 export default function Home(){
     return (
@@ -18,16 +21,22 @@ export default function Home(){
                 <HashLink smooth to='/#projects'><button className='button'>Projects</button></HashLink>
                 <HashLink smooth to='/#resume'><button className='button'>Resume</button></HashLink>
                 <HashLink smooth to='/#contact'><button className='button'>Contact</button></HashLink>
-            </header> */}
-           {//<ScrollButtons id='scrollButtons'/>
-           }
+            </header> */
+           //<ScrollButtons id='scrollButtons'/>
+        }
            <div id='nav'>
            <Nav/>
            </div>
             <div className='sections'>
                 <div id='home' className='section'>
-                    <h1>Matt Reilly</h1>
+                    {/* <div className='curvedText'>
+                    {/* <ReactCurvedText width={300} height={300} cx={150} cy={300} rx={150} ry={150} startOffset={0} reversed={true}
+                    text='Matt Reilly' textProps={{style: {fontSize: 60}}}/>
+                    </div>  */}
+                    <h1 className='header'>Matt Reilly</h1> 
                     <img src={Img} className='myImg'></img>
+                    <img src={Vector} className='vectImg'></img>
+                    <p className='label'>Fullstack Software Engineer</p>
                 </div>
                 <div id='about' className='section'>
                     <About/>

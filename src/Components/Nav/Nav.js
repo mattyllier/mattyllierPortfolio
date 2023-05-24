@@ -35,12 +35,12 @@ export default function Nav(){
     },[])
      
     return (
-        <nav className='sideNav'>
-            <HashLink smooth to='/#home'><button className={activeSection==='home' ? 'toTop' : 'toTop'}>Home</button></HashLink>
-            <HashLink smooth to='/#about'><button className={activeSection==='about' ? 'toTop': 'button'}>About</button></HashLink>
-            <HashLink smooth to='/#projects'><button className={activeSection==='about' ? 'toTop': 'button'}>Projects</button></HashLink>
-            <HashLink smooth to='/#resume'><button className={activeSection==='about' ? 'toTop': 'button'}>Resume</button></HashLink>
-            <HashLink smooth to='/#contact'><button className={activeSection==='about' ? 'toTop': 'button'}>Contact</button></HashLink>
+        <nav className='navBar'>
+            <HashLink smooth to='/#home'><button className={activeSection==='home' ? 'active' : 'active'}>Home</button></HashLink>
+            <HashLink smooth to='/#about'><button className={activeSection==='about' ? 'active': 'button'}>About</button></HashLink>
+            <HashLink smooth to='/#projects'><button className={activeSection==='about' ? 'active': 'button'}>Projects</button></HashLink>
+            <HashLink smooth to='/#resume'><button className={activeSection==='about' ? 'active': 'button'}>Resume</button></HashLink>
+            <HashLink smooth to='/#contact'><button className={activeSection==='about' ? 'active': 'button'}>Contact</button></HashLink>
         </nav>
     )
 };

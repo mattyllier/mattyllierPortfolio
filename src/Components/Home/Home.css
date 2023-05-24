@@ -1,4 +1,4 @@
-* {
+body {
     background-color: darkslategrey;
 }
 
@@ -12,6 +12,35 @@
         rgb(194,89,255)0%,
         rgb(188,202,49)100%
     );
+} */
+
+#home {
+    height: 979px;
+}
+
+#about {
+    height: 1100px;
+}
+
+.header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.label {
+    z-index: 1;
+    font-weight: bold;
+    margin-top: -450px;
+    margin-left: -300px;
+}
+/* 
+.explore {
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    color: white;
+    font-size: 40px;
 } */
 
 .button {
@@ -42,7 +71,7 @@
     width: 1000px;
     color: lightgrey;
     font-size: 40px;
-    margin: 20px;
+    /* margin: 20px; */
     background: linear-gradient(
         99deg,
         rgb(01,1,5,1),
@@ -57,7 +86,33 @@
 
 .myImg {
     height: 300px;
-    width: 220px;
+    width: 277px;
+    margin-top: -50px;
     border: solid 10px lightgrey;
     border-radius: 150px;
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 254.7) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.myImg:hover{
+    box-shadow: rgba(255, 255, 255, 254.7) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.vectImg {
+    width: 100%;
+    margin-top: -120px;
+}
+
+.homeContent {
+    height: 700px;
+    width: 1000px;
+    color: lightgrey;
+    font-size: 40px;
+    margin: 20px;
+    background: linear-gradient(
+        99deg,
+        rgb(01,1,5,1),
+        rgb(32,124,124)
+    );
+
 }

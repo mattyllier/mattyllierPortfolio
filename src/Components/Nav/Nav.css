@@ -1,4 +1,4 @@
-.sideNav {
+.navBar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -7,13 +7,10 @@
     position: fixed;
     padding: 10px;
     border-radius: 10px;
+    top: 100px;
 }
 
-.navToTop {
-    display: flex;
-}
-
-.toTop {
+.active {
     color: lightgrey;
     background-color: black;
     height: 60px;
@@ -21,10 +18,12 @@
     font-size: 50px;
     transition: all, ease-in-out .2s;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
-.toTop:hover {
-    transform: scale(1.1);
+.active:hover {
+    /* transform: scale(1.1); */
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 #scrollButtonPanel {
@@ -44,6 +43,6 @@
     width: 100px;
 }
 
-.active {
+/* .active {
     transform: scale(3.1)
-}
+} */
