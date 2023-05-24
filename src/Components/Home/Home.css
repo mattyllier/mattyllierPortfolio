@@ -2,7 +2,7 @@
     background-color: darkslategrey;
 }
 
-.navBar {
+/* .navBar {
     display: flex;
     justify-content: space-between;
     padding: 10px 80px 10px 80px;
@@ -12,7 +12,7 @@
         rgb(194,89,255)0%,
         rgb(188,202,49)100%
     );
-}
+} */
 
 .button {
     background: transparent;
@@ -21,6 +21,7 @@
     background-color: lightgrey;
     transition: all .2s ease-in-out;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px;
+    margin: 5px;
 }
 
 .button:hover{
@@ -32,11 +33,13 @@
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     background-color: darkslategrey;
 }
 
 .section {
-    height: 500px;
+    min-height: 700px;
+    width: 1000px;
     color: lightgrey;
     font-size: 40px;
     margin: 20px;
@@ -46,4 +49,15 @@
         rgb(32,124,124)
     );
 
+}
+
+#scrollButtons {
+    display: none;
+}
+
+.myImg {
+    height: 300px;
+    width: 220px;
+    border: solid 10px lightgrey;
+    border-radius: 150px;
 }

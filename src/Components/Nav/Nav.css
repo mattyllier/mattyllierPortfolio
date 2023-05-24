@@ -5,10 +5,8 @@
     align-items: center;
     width: 230px;
     position: fixed;
-}
-
-.sideButton {
-    margin: 5px;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 .navToTop {
@@ -17,7 +15,35 @@
 
 .toTop {
     color: lightgrey;
-    background-color: black !important;
+    background-color: black;
     height: 60px;
     width: 60px;
+    font-size: 50px;
+    transition: all, ease-in-out .2s;
+    cursor: pointer;
+}
+
+.toTop:hover {
+    transform: scale(1.1);
+}
+
+#scrollButtonPanel {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 300px;
+    left: 1270px;
+    top: 200px;
+}
+
+.scrollButton {
+    height: 100px;
+    width: 100px;
+}
+
+.active {
+    transform: scale(3.1)
 }

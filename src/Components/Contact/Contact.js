@@ -6,9 +6,7 @@ function Contact(){
     return (
         <>
             Contact
-        <div className='navBar'>
             <Link to='https://github.com/mattyllier'><BsGithub className='gitHub'/></Link>
-        </div>
         </>
     )
 }
