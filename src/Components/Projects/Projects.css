@@ -1,9 +1,44 @@
+#projectsHeader {
+   color: white; 
+}
+
+#encryptorProject {
+    margin-top: -30px;
+}
+
+.project {
+    display: flex;
+    align-items: space-evenly;
+    justify-content: center;
+}
+
 .link {
     text-decoration: none;
     color: white;
 }
 
+.linkIcon {
+    height: 100px;
+    width: 100px;
+    padding-top: 15px;
+    transition: all, ease-in-out .2s;
+    color: white;
+    cursor: pointer;
+}
+
+.linkIcon:hover{
+    transform: scale(1.1);
+}
+
 .encryptorImg {
-    height: 350px;
-    width: 700px;
+    height: 250px;
+    width: 500px;
+    border: solid 10px darkslategrey;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+
+.enterLink {
+    display: flex;
+    align-items: center;
 }

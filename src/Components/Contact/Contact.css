@@ -26,7 +26,10 @@
 }
 
 #mailTo {
+    position: absolute;
     z-index: 1;
+    left: 1030px;
+    margin-top: 4px;
 }
 
 .moai {
