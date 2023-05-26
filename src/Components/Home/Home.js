@@ -42,6 +42,7 @@ export default function Home(){
                     <About/>
                 </div>
                 <div id='projects' className='section'>
+                    <h1 id='projectsHeader'>MyProjects</h1>
                     <Projects/>
                 </div>
                 <div id='resume' className='section'>

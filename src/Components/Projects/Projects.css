@@ -1,5 +1,6 @@
 #projectsHeader {
    color: white; 
+   margin-bottom: -10px;
 }
 
 /* #encryptorProject {
@@ -9,18 +10,56 @@
 .project {
     display: flex;
     align-items: space-evenly;
+    margin: 0 10px 0 70px;
+    background: linear-gradient(
+        88deg,
+        darkslategrey,
+        rgb(32,124,124)
+    );
+    transition: all, ease-in-out .2s;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project:hover {
+    transform: scale(1.1)
+}
+
+.projectLink {
+    margin-right: 35px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    width: 100%;
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+}
+
+.modalText2 {
+    font-size: 30px;
+    margin-top: -30px;
 }
 
 .link {
+    display: block;
     text-decoration: none;
     color: white;
+}
+
+.hidden {
+    display: none;
 }
 
 .linkIcon {
     height: 100px;
     width: 100px;
-    padding-top: 15px;
+    margin-left: 10px;
     transition: all, ease-in-out .2s;
     color: white;
     cursor: pointer;

@@ -116,3 +116,12 @@ body {
     );
 
 }
+
+#projectsHeader {
+    position: absolute;
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    left: 1200px;
+    top: 1800px;
+    font-size: 120px;
+}
