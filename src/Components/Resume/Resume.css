@@ -1,4 +1,8 @@
 .davImg {
-    width: 100px;
-    height: 100px;
+    width: 170px;
+    height: 200px;
+    border: solid 10px darkslategrey;
+    border-radius: 150px;
+    margin-left: -700px;
+    margin-bottom: -500px;
 }
