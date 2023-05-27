@@ -1,6 +1,6 @@
-import {HashLink} from 'react-router-hash-link'
-import {useState, useEffect} from 'react'
-import ReactCurvedText from 'react-curved-text'
+// import {HashLink} from 'react-router-hash-link'
+// import {useState, useEffect} from 'react'
+// import ReactCurvedText from 'react-curved-text'
 import About from '../About/About'
 import Projects from '../Projects/Projects'
 import Resume from '../Resume/Resume'
@@ -34,18 +34,19 @@ export default function Home(){
                     text='Matt Reilly' textProps={{style: {fontSize: 60}}}/>
                     </div>  */}
                     <h1 className='header'>Matt Reilly</h1> 
-                    <img src={Img} className='myImg'></img>
-                    <img src={Vector} className='vectImg'></img>
+                    <img src={Img} alt='' className='myImg'></img>
+                    <img src={Vector} alt='' className='vectImg'></img>
                     <p className='label'>Fullstack Software Engineer</p>
                 </div>
                 <div id='about' className='section'>
                     <About/>
                 </div>
                 <div id='projects' className='section'>
-                    <h1 id='projectsHeader'>MyProjects</h1>
+                    <h1 className='sectionHeader' id='projectsHeader'>MyProjects</h1>
                     <Projects/>
                 </div>
                 <div id='resume' className='section'>
+                    <h1 className='sectionHeader' id='resumeHeader'>Resume</h1>
                     <Resume/>
                 </div>
                 <div id='contact' className='section'>

@@ -1,3 +1,10 @@
-.vectImg {
-    margin-top: -800px;
+.aboutText {
+    margin: 0 20px 0 20px;
+}
+
+#vectImg {
+    position: absolute;
+    width: 66%;
+    left: 260px;
+    top: 1467px;
 }

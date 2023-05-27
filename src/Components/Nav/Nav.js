@@ -1,6 +1,6 @@
 import {useState, useEffect} from 'react'
 import {HashLink} from 'react-router-hash-link'
-import {BsFillArrowUpSquareFill, BsFillArrowDownSquareFill} from 'react-icons/bs'
+// import {BsFillArrowUpSquareFill, BsFillArrowDownSquareFill} from 'react-icons/bs'
 import './Nav.css'
 
 export default function Nav(){
@@ -27,6 +27,9 @@ export default function Nav(){
                 break;
             case scrollPosition >= contact.offsetTop-shift:
                 setActiveSection('contact')
+                break;
+            default:
+                setActiveSection('home')
                 break;
         }
         }

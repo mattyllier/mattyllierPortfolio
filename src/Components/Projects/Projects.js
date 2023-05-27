@@ -1,59 +1,63 @@
-import {useState, useEffect} from 'react'
+import {useState} from 'react' // useEffect
 import {Link} from 'react-router-dom'
-import {BiLinkExternal, BiPyramid} from 'react-icons/bi'
+import {BiPyramid, BiLinkExternal} from 'react-icons/bi' 
 import {FaBrain} from 'react-icons/fa'
 import {AiFillCalculator} from 'react-icons/ai'
 import {RiNetflixFill} from 'react-icons/ri'
-//import EncryptorIcon from './encryptorIcon.PNG'
-import EncryptorImg from './encryptorImg1.PNG'
-import CalculatorImg from './calculatorImg1.PNG'
+import Encryptor from '../Encryptor/Encryptor'
+import Calculator from '../Calculator/Calculator'
 import './Projects.css'
 
 export default function Projects(){
     const [visible, setVisible] = useState(false)
-    const handleHover=()=>{
-        setVisible(true)
-    }
-    const offHover=()=>{
-        setVisible(false)
+    let hidden = true
+    const handleClick=(e)=>{
+        //console.log(e.target.id)
+        if(e.target.className==='encryptorProject'){
+            setVisible(true)
+            hidden = false
+        } else if(e.target.className==='calculatorProject'){
+            setVisible('calculatorLink')
+            hidden = false
+        }
+        // else{
+        //     setVisible(false)
+        //     hidden = true
+        // }
     }
     return (
-        <div>      
-            <div className='project' id='encryptorProject'>
-                <FaBrain className='linkIcon' onMouseEnter={handleHover} onMouseLeave={offHover}/>
-                <div className='projectLink'>
-                <span className='projectLink'>Encryptor & Solve the Phrase Game</span></div>
-                {/* <div className={visible ? 'modal' : 'hidden'}><p>Encryptor & Solve the Phrase Game</p>
-                <p className='modalText2'>Click to Learn More</p></div>
-                <Link target='_blank' className='hidden' to='https://mattyllier.github.io/gameProject/'>
-                    Encryptor & Solve the Phrase Game
-                    <div className='enterLink'>Try It<BiLinkExternal className='linkIcon'/></div>
-                    <img src={EncryptorImg} className='encryptorImg'/></Link> */}
+        <div className='projects'>   
+
+            <div className='project encryptorProject' onClick={handleClick}>
+                <FaBrain className='linkIcon encryptorProject'/>
+                <div className='projectLink encryptorProject'>
+                <span className='projectLink encryptorProject'>Encryptor & Solve the Phrase Game</span></div> 
             </div>
-            <div className='project' id='calculatorProject'>
-                <AiFillCalculator className='linkIcon' onMouseEnter={handleHover} onMouseLeave={offHover}/>
+            <Encryptor className handleClick={handleClick}/>
+            
+
+            <div className='project' id='calculatorProject' onClick={handleClick}>
+                <AiFillCalculator className='linkIcon'/>
                 <div className='projectLink'>
                 <span className='projectLink'>Unlimited-sized Operations Calculator</span></div>
-                {/* <div className={visible ? 'modal' : 'hidden'}><p>Unlimited Operations Calculator</p>
-                <p className='modalText2'>Click toLearn More</p></div>
-                <Link target='_blank' className='hidden' to='https://mattyllier.github.io/calculator-project/'>
-                    Unlimited-sized Operations Calculator
-                    <p className='enterLink'>Try It<BiLinkExternal className='linkIcon'/></p>
-                    <img src={CalculatorImg} className='encryptorImg'/></Link> */}
             </div>
-            <div className='project' id='notNetflixProject'>
-                <RiNetflixFill className='linkIcon' onMouseEnter={handleHover} onMouseLeave={offHover}/>
+            <Calculator handleClick={handleClick}/>
+
+            <div className='project' id='notNetflixProject' onClick={handleClick}>
+                <RiNetflixFill className='linkIcon'/>
                 <div className='projectLink'>
                 <span className='projectLink'>NotNetflix API Project</span></div>
-                {/* <div className={visible ? 'modal' : 'hidden'}><p>NotNetflix Database Project</p>
-                <p className='modalText2'>Click to Learn More</p></div> */}
             </div>
-            <div className='project' id='capstone'>
-                <BiPyramid className='linkIcon' onMouseEnter={handleHover} onMouseLeave={offHover}/>
+            <div className={visible ? 'modal project' : 'hidden'}><Link className='modal' to='https://github.com/mattyllier/' target='_blank'>
+                Try It<BiLinkExternal className='linkIcon'/></Link><button onClick={handleClick}>Close</button>
+            </div>
+            <div className='project' id='capstone' onClick={handleClick}>
+                <BiPyramid className='linkIcon'/>
                 <div className='projectLink'>
                 <span className='projectLink'>Capstone</span></div>
-                {/* <div className={visible ? 'modal' : 'hidden'}><p>Capstone Project</p>
-                <p>Click to Learn More</p></div> */}
+            </div>
+            <div className={visible ? 'modal project' : 'hidden'}><Link className='modal' to='https://github.com/mattyllier/' target='_blank'>
+                Try It<BiLinkExternal className='linkIcon'/></Link><button onClick={handleClick}>Close</button>
             </div>
         </div>
     )

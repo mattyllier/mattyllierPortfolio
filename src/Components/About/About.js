@@ -4,14 +4,13 @@ import './About.css'
 export default function About(){
     return (
         <>
-        <div>
+        <div className='aboutText'>
         <p>Welcome!</p>
         <p>I'm a JavaScript and React.js developer who is has had a lifelong interest in data, algorithms and numbers.</p>
         <p>My attention to detail and experience in decrypting patterns
-            and solving logic-based problems,  applied in my hobby of learning languages, decoding ciphers and even keeping track of license 
-            plate serial patterns</p>
+            and solving logic-based problems</p>
         </div>
-        <img src={vectImg} className='vectImg'/>
+        <img src={vectImg} alt='' className='vectImg' id='vectImg'/>
         </>
     )
 }

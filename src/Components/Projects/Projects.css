@@ -1,11 +1,6 @@
-#projectsHeader {
-   color: white; 
-   margin-bottom: -10px;
+.projects {
+    margin-top: 5px;
 }
-
-/* #encryptorProject {
-    margin-top: -30px;
-} */
 
 .project {
     display: flex;
@@ -13,8 +8,8 @@
     margin: 0 10px 0 70px;
     background: linear-gradient(
         88deg,
-        darkslategrey,
-        rgb(32,124,124)
+        darkslategrey 0%,
+        rgb(32,124,124) 100%
     );
     transition: all, ease-in-out .2s;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
@@ -35,10 +30,30 @@
     width: 100%;
 }
 
-.modal {
+.infoBox {
     display: flex;
     flex-direction: column;
+}
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
     font-size: 40px;
+    margin: 0 10px 0 70px;
+    background: linear-gradient(
+        88deg,
+        darkslategrey,
+        rgb(32,124,124)
+    );
+    transition: all, ease-in-out .2s;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    
 }
 
 .modalText2 {
@@ -70,8 +85,7 @@
 }
 
 .encryptorImg {
-    height: 250px;
-    width: 500px;
+    height: 80%;
     border: solid 10px darkslategrey;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;

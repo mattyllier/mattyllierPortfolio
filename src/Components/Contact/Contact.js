@@ -18,7 +18,7 @@ function Contact(){
                     <BsLinkedin className='linkIcon'/></Link>
                 </div>
                 <div>
-                    <a target='_blank' href='mailTo:iamttyller@gmail.com' id='mailTo' className='link'>Email 
+                    <a target='_blank' href='mailTo:iamttyller@gmail.com' rel='noreferrer' id='mailTo' className='link'>Email 
                     <SiGmail className='linkIcon'/></a>
                 </div>
                 <div>
@@ -30,7 +30,7 @@ function Contact(){
                     <SiLeetcode className='linkIcon'/></Link>
                 </div>
                 <div>
-                    <img src={Moai} className='moai'></img>
+                    <img src={Moai} alt='' className='moai'></img>
                 </div>
             </div>
         </>

@@ -1,8 +1,10 @@
-.davImg {
-    width: 170px;
+.resumeLink {
+    color: white;
     height: 200px;
-    border: solid 10px darkslategrey;
-    border-radius: 150px;
-    margin-left: -700px;
-    margin-bottom: -500px;
+    width: 200px;
+    transition: all, ease-in-out .2s;
+}
+
+.resumeLink:hover {
+    transform: scale(1.1);
 }
